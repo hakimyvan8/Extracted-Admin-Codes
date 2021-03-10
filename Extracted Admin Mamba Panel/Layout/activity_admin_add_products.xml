@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Admin.AdminAddProductsActivity">
+
+    <RelativeLayout
+        android:id="@+id/rel10"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:padding="10dp"
+        android:background="@drawable/shape_rect02">
+
+        <ImageButton
+            android:id="@+id/backBtn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_arrowback"
+            android:background="@null"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Add Product"
+            android:textColor="@color/green"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+    </RelativeLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/circular_image"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/rel10"
+        android:padding="10dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_plus_cart"
+        app:civ_border_color="@color/colorPrimary"
+        app:civ_border_width="5dp" />
+
+    <EditText
+        android:id="@+id/product_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/circular_image"
+        android:layout_margin="5dp"
+        android:drawableStart="@drawable/ic_text"
+        android:drawablePadding="10dp"
+        android:inputType="text"
+        android:layout_marginTop="20dp"
+        android:padding="20dp"
+        android:hint="Product Name"
+        android:textColorHint="#605E5E"
+        android:background="@drawable/shape_rect02"
+        android:drawableLeft="@drawable/ic_text" />
+
+    <EditText
+        android:id="@+id/product_Quantity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/product_name"
+        android:layout_margin="5dp"
+        android:layout_marginTop="14dp"
+        android:drawableStart="@drawable/ic_cart"
+        android:drawablePadding="10dp"
+        android:background="@drawable/shape_rect02"
+        android:hint="Product Quantity e.g Kg, g etc."
+        android:inputType="number"
+        android:padding="20dp"
+        android:textColorHint="#605E5E"
+        android:drawableLeft="@drawable/ic_cart" />
+
+
+    <EditText
+        android:id="@+id/product_Price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/product_Quantity"
+        android:inputType="number"
+        android:drawableStart="@drawable/ic_money"
+        android:drawablePadding="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_margin="5dp"
+        android:padding="20dp"
+        android:hint="Product Price"
+        android:textColorHint="#535353"
+        android:background="@drawable/shape_rect02"
+        android:drawableLeft="@drawable/ic_money" />
+
+
+    <EditText
+        android:id="@+id/product_Description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/product_Price"
+        android:inputType="textMultiLine"
+        android:drawableStart="@drawable/ic_text"
+        android:drawablePadding="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_margin="5dp"
+        android:padding="20dp"
+        android:hint="Product Description"
+        android:textColorHint="#535353"
+        android:background="@drawable/shape_rect02"
+        android:drawableLeft="@drawable/ic_text" />
+
+    <Button
+        android:id="@+id/button_add"
+        android:layout_width="256dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/product_Description"
+        android:layout_alignParentRight="true"
+        android:text="Add Product"
+        android:textColor="@color/colorText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp"
+        android:layout_marginRight="77dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:minWidth="120dp" />
+
+</RelativeLayout>

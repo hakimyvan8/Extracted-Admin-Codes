@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Client.LoginActivity">
+
+    <RelativeLayout
+        android:id="@+id/rel12"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/backBtn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="Back"
+            android:textSize="20dp"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:background="@null"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat"
+            android:textAlignment="textStart"
+            android:layout_alignParentBottom="true"
+            android:text="Login"
+            android:textColor="@color/colorPrimary"
+            android:textSize="50dp"
+            android:textStyle="bold"
+            android:gravity="start" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rel12">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/login_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:drawableStart="@drawable/ic_person"
+                android:background="@drawable/shape_rect02"
+                android:hint="ID"
+                android:inputType="number"
+                android:padding="10dp"
+                android:drawablePadding="5dp"
+                android:textColorHint="#616161"
+                android:drawableLeft="@drawable/ic_phone" />
+
+
+            <EditText
+                android:id="@+id/login_Password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/login_number"
+                android:layout_margin="10dp"
+                android:drawableStart="@drawable/ic_lock"
+                android:background="@drawable/shape_rect02"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:padding="10dp"
+                android:drawablePadding="5dp"
+                android:textColorHint="#616161"
+                android:drawableLeft="@drawable/ic_lock"/>
+
+
+            <LinearLayout
+                android:id="@+id/forgot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/login_Password"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/login_checkBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Remember Me"
+                    android:layout_marginRight="150dp"
+                    android:textColor="@color/colorPrimary"/>
+
+                <TextView
+                    android:id="@+id/login_forgotID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Forgot ID ?"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_marginBottom="10dp"/>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/login_button"
+                android:layout_width="256dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorPrimary"
+                android:layout_below="@+id/forgot"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp"
+                android:text="Login Supplier"
+                android:textColor="#FFF"
+                android:textSize="15dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/NotSupplierLink"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/login_button"
+                android:layout_marginTop="20dp"
+                android:text="Not a Supplier? Go Back"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"/>
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

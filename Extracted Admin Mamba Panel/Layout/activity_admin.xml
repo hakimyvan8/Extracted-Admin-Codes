@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Admin.AdminActivity">
+
+    <TextView
+        android:id="@+id/Admin_suite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15sp"
+        android:layout_marginTop="100sp"
+        android:fontFamily="@font/montserrat"
+        android:text="Admin Suite"
+        android:textColor="@color/colorPrimary"
+        android:textSize="35dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/admin_image"
+        android:layout_width="wrap_content"
+        android:layout_height="108dp"
+        android:layout_below="@id/Admin_suite"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:src="@drawable/group_8446" />
+
+    <TextView
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/admin_image"
+        android:text="Add New Product"
+        android:layout_marginLeft="15dp"
+        android:textColor="@color/colorPrimary"
+        android:textSize="15dp" />
+
+    <ImageView
+        android:id="@+id/admin_new_product"
+        android:layout_width="wrap_content"
+        android:layout_height="108dp"
+        android:layout_below="@id/admin_image"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:src="@drawable/group_8448" />
+
+    <TextView
+        android:id="@+id/admin_orders"
+        android:layout_width="148dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/admin_new_product"
+        android:layout_marginLeft="30dp"
+        android:text="View Orders"
+        android:textColor="@color/colorPrimary" />
+
+    <Button
+        android:id="@+id/admin_log_out"
+        android:layout_width="86dp"
+        android:layout_height="46dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="146dp"
+        android:layout_marginLeft="146dp"
+        android:layout_marginEnd="161dp"
+        android:layout_marginRight="161dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/rectangle_69"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/log_out"
+        android:textColor="#FFF"
+        android:textSize="10dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/admin_maintain"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/admin_new_product"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/group_8449" />
+
+    <TextView
+        android:layout_width="147dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/admin_maintain"
+        android:layout_marginLeft="20dp"
+        android:text="Manage Product"
+        android:textColor="@color/colorPrimary" />
+</RelativeLayout>
